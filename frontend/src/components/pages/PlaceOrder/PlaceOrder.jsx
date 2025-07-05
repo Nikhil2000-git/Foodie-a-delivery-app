@@ -1,6 +1,11 @@
 import React, { useContext } from "react";
 import "./PlaceOrder.css";
 import { StoreContext } from "../../../context/StoreContex";
+import { useNavigate, useNavigation } from "react-router-dom";
+
+const Cart = () => {
+  const navigate = useNavigate();
+};
 
 const PlaceOrder = () => {
   const { getTotalCartAmount } = useContext(StoreContext);
@@ -48,7 +53,10 @@ const PlaceOrder = () => {
               </b>
             </div>
           </div>
-          <button>PROCEED TO PAYMENT</button>
+
+          <button onClick={() => navigate("/payment")}>
+            PROCEED TO PAYMENT
+          </button>
         </div>
       </div>
     </form>

@@ -1,0 +1,50 @@
+.payment-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+.payment-options label {
+  display: block;
+  margin: 12px 0;
+  font-size: 16px;
+}
+
+.qr-section {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.qr-section img {
+  width: 200px;
+  height: 200px;
+}
+
+.payment-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.payment-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.payment-buttons button:first-child {
+  background-color: #28a745;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+  color: white;
+}
